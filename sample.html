@@ -1,100 +1,175 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="utf-8">
-        <title>표 만들기</title>
-        <style>
-            table,th, td {
-                border: 1px solid #ccc;
-            }
-            th, td {
-                width: 100px;
-                padding: 10px;
-            }
-            thead, tfoot {
-                background-color: #eeeeee;
-            }
-        </style>
-    </head>
-    <body>
-        <table>
-            <caption>음식</caption>
-            <thead>
-                <tr>
-                    <th>구분</th>
-                    <th>중량(g)</th>
-                    <th>칼로리(kcal)</th>
-                    <th>단백질(g)</th>
-                    <th>지방(g)</th>
-                    <th>탄수화물(g)</th>
-                    <th>당류(g)</th>
-                    <th>나트륨(mg)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>몬스터주니어</td>
-                    <td>249</td>
-                    <td>704</td>
-                    <td>31</td>
-                    <td>32</td>
-                    <td>72.5</td>
-                    <td>7</td>
-                    <td>1,325</td>
-                </tr>
-                <tr>
-                    <td>치즈스틱</td>
-                    <td>49</td>
-                    <td>136</td>
-                    <td>7</td>
-                    <td>6</td>
-                    <td>13</td>
-                    <td>2</td>
-                    <td>271</td>
-                </tr>
-                <tr>
-                    <td>딥치즈버거</td>
-                    <td>281</td>
-                    <td>605</td>
-                    <td>42</td>
-                    <td>25</td>
-                    <td>54.6</td>
-                    <td>12</td>
-                    <td>1,195</td>
-                </tr>
-                <tr>
-                    <td>단백질쉐이크</td>
-                    <td>500</td>
-                    <td>200</td>
-                    <td>40</td>
-                    <td>1.6</td>
-                    <td>8</td>
-                    <td>0</td>
-                    <td>600</td>
-                </tr>
-                <tr>
-                    <td>핫식스</td>
-                    <td>355</td>
-                    <td>10</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>8.8</td>
-                    <td>0</td>
-                    <td>130</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>합계</td>
-                    <td>1,434</td>
-                    <td>1,655</td>
-                    <td>120</td>
-                    <td>64.6</td>
-                    <td>156.9</td>
-                    <td>21</td>
-                    <td>3,521</td>
-                </tr>
-            </tfoot>
-        </table>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>표 만들기</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th,
+        td {
+            width: 100px;
+            padding: 10px;
+            /* text-align: center; */
+        }
+
+        thead,
+        tfoot {
+            background-color: #eeeeee;
+        }
+
+        th[type="submit"] {
+            width: 500px;
+        }
+        label {
+            width: 80px;
+            float: left;
+            text-align: right;
+            padding-right: 8px;
+        }   
+        input {
+            width: 80px;
+            float: left;
+        }
+
+        /* tfoot {
+            text-align: left;
+        } */
+    </style>
+</head>
+
+<body>
+    <table type="table1">
+        <tr>
+            <th>
+                <table type="table2">
+                    <caption>음식</caption>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>중량(g)</th>
+                            <th>칼로리(kcal)</th>
+                            <th>단백질(g)</th>
+                            <th>지방(g)</th>
+                            <th>탄수화물(g)</th>
+                            <th>당류(g)</th>
+                            <th>나트륨(mg)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>몬스터주니어<a href="https://www.burgerking.co.kr/menu/detail/1100667"><img
+                                        src="images/monster.jpg" width="100" height="100" alt="몬스터주니어"></a></td>
+                            <td>249</td>
+                            <td>704</td>
+                            <td>31</td>
+                            <td>32</td>
+                            <td>72.5</td>
+                            <td>7</td>
+                            <td>1,325</td>
+                        </tr>
+                        <tr>
+                            <td>치즈스틱<a href="https://www.burgerking.co.kr/menu/detail/2030261"><img
+                                        src="images/long.jpg" width="100" height="100" alt="치즈스틱"></a></td>
+                            <td>49</td>
+                            <td>136</td>
+                            <td>7</td>
+                            <td>6</td>
+                            <td>13</td>
+                            <td>2</td>
+                            <td>271</td>
+                        </tr>
+                        <tr>
+                            <td>딥치즈버거<a href="https://momstouch.co.kr/menu/view.php?idx=83"><img src="images/cheese.jpg"
+                                        width="100" height="100" alt="딥치즈버거"></a></td>
+                            <td>281</td>
+                            <td>605</td>
+                            <td>42</td>
+                            <td>25</td>
+                            <td>54.6</td>
+                            <td>12</td>
+                            <td>1,195</td>
+                        </tr>
+                        <tr>
+                            <td>단백질쉐이크<a
+                                    href="https://www.selexmall.com/kr/product/product.lime?r_prcode=1739073&srsltid=AU7gw4UrJlgEjHIsu2u_UeEpom0dGA1kFnGEWSnMdl0IDIdIPnyUxZ5M"><img
+                                        src="images/profit.jpg" width="100" height="100" alt="단백질쉐이크"></a></td>
+                            <td>500</td>
+                            <td>200</td>
+                            <td>40</td>
+                            <td>1.6</td>
+                            <td>8</td>
+                            <td>0</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>핫식스<a
+                                    href="https://company.lottechilsung.co.kr/kor/brand/hot6/contentsid/625/index.do"><img
+                                        src="images/hot6.jpg" width="100" height="100" alt="핫식스"></a></td>
+                            <td>355</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>8.8</td>
+                            <td>0</td>
+                            <td>130</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>합계</td>
+                            <td>1,434</td>
+                            <td>1,655</td>
+                            <td>120</td>
+                            <td>64.6</td>
+                            <td>156.9</td>
+                            <td>21</td>
+                            <td>3,521</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </th>
+            <th type="submit">
+                <h1>추가</h1>
+                <form>
+                    <fieldset>
+                        <legend>개인 정보</legend>
+                        <dl>
+                            <dd>
+                                <label for="name">이름</label>
+                                <input type="text" id="name">
+                            </dd>
+                            <dd>
+                                <label for="mail">메일 주소</label>
+                                <input type="text" id="mail">
+                            </dd>
+                        </dl>
+                    </fieldset>
+                    <fieldset>
+                        <legend>로그인 정보</legend>
+                        <dl>
+                            <dd>
+                                <label for="id">아이디</label>
+                                <input type="text" id="id">
+                            </dd>
+                            <dd>
+                                <label for="pwd">비밀번호</label>
+                                <input type="text" id="pwd">
+                            </dd>
+                        </dl>
+                    </fieldset>
+                </form>
+            </th>
+        </tr>
+
+
+    </table>
+
+</body>
+
 </html>
