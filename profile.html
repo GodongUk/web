@@ -1,49 +1,116 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="utf-8">
-        <title>온라인 프로필</title>
-    </head>
-    <body>
-        <h1 style="color: blue;">Who am I?</h1>
-        <p><mark>프론트엔드 웹 기술(Frontend Web Tech.)</mark>에 관심이 많습니다.<br>
-        현재 대전 둔산동 그린아트 학원에서 실습중입니다.
-        </p>
-        <hr>
-        <h1>Experience</h1>
-        <ul>
-            <li><mark>프론트 엔드 개발</mark>
-                <ol>
-                    <li>그린아트학원 수업</li>
-                    <li>그린아트학원 실습</li>
-                </ol>
-            </li>
-            <li><span style="background-color: red;">웹 디자인</span>
-                <ol>
-                    <li>그린아트학원 수업</li>
-                    <li>그린아트학원 실습</li>
-                </ol>
-            </li>
-        </ul>
-        <hr>
-        <h1>Skills</h1>
-        <ul>
-            <li>스킬
-                <ol>
-                    <li>예시1</li>
-                    <li>예시2</li>
-                </ol>
-            </li>
-        </ul>
-        <hr>
-        <h1>Education</h1>
-        <ul>
-            <li>학력입니다.
-                <ol>
-                    <li>대전대학교 컴퓨터 공학과 전공</li>
-                    <li>대전대신고등학교 졸업</li>
-                </ol>
-            </li>
-        </ul>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>온라인 프로필</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th,
+        td {
+            /* width: 100px; */
+            padding: 10px;
+        }
+
+        thead {
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td style=background-color:#eeeeee;>
+                <img src="images/human.jpg" width="200" height="150" alt="사람 사진">
+                <h3>이름: 고동욱</h3>
+                <p>안녕하세요 고동욱 입니다.</p>
+            </td>
+            <td>
+                <h1 style="color: blue;">Who am I?</h1>
+                <p><mark>프론트엔드 웹 기술(Frontend Web Tech.)</mark>에 관심이 많습니다.<br>
+                    현재 대전 둔산동 그린아트 학원에서 실습중입니다.
+                </p>
+                <hr>
+                <h1>Experience</h1>
+                <ul>
+                    <li><mark>프론트 엔드 개발</mark>
+                        <ol>
+                            <li>그린아트학원 수업</li>
+                            <li>그린아트학원 실습</li>
+                        </ol>
+                    </li>
+                    <li><span style="background-color: red;">웹 디자인</span>
+                        <ol>
+                            <li>그린아트학원 수업</li>
+                            <li>그린아트학원 실습</li>
+                        </ol>
+                    </li>
+                </ul>
+                <hr>
+                <h1>Skills</h1>
+                <ul>
+                    <li>스킬
+                        <ol>
+                            <li>예시1</li>
+                            <li>예시2</li>
+                        </ol>
+                    </li>
+                </ul>
+                <hr>
+                <h1>Education</h1>
+                <table>
+                    <colgroup>
+                        <col>
+                        <col span="3" style="background-color: yellow">
+                        <!-- <col span="1" style="background-color: blue">                 -->
+                        <col style="background-color: blue">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>출신학교</th>
+                            <th>전공</th>
+                            <th>기간</th>
+                            <th>구분</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>대전대학교</td>
+                            <td>컴퓨터공학과</td>
+                            <td>2017.03~2022.03</td>
+                            <td>졸업</td>
+                        </tr>
+                        <tr>
+                            <td>대전대신고등학교</td>
+                            <td>-</td>
+                            <td>2014.03~2017.03</td>
+                            <td>졸업</td>
+                        </tr>
+                        <tr>
+                            <td>대전봉산중학교</td>
+                            <td>-</td>
+                            <td>2011.03~2014.03</td>
+                            <td>졸업</td>
+                        </tr>
+                        <tr>
+                            <td>대전내동초등학교</td>
+                            <td>-</td>
+                            <!-- <td><img src="images/prod.jpg" alt="커피"></td> -->
+                            <td>2005.03~2011.03</td>
+                            <td>졸업</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
 </html>
