@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>웹 폼</title>
+    <style>
+        form {
+            padding: 10px;
+            width: 270px;
+            height: 50px;
+            background-color: cornsilk;
+        }
+
+        fieldset {
+            width: 200px;
+            height: 50px;
+            padding: 3px;
+            background-color: navajowhite;
+
+        }
+
+        input {
+            width: 40px;
+            height: 20px;
+            background-color: beige;
+        }
+
+        img {
+            width: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>사칙연산 계산기</h1>
+    <table>
+        <tr>
+            <td>
+                <img src="images/calculatingmachine.jpg" alt="계산기">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+                    <fieldset>
+                        <legend>더하기</legend>
+                        <input type="number" name="num1" placeholder="0" value="">
+                        + <input type="number" name="num2" placeholder="0" value="">
+                        =<output name="result" for="num"></output>
+                    </fieldset>
+                </form>
+                <form oninput="result2.value=parseInt(num3.value)-parseInt(num4.value)">
+                    <fieldset>
+                        <legend>빼기</legend>
+                        <input type="number" name="num3" placeholder="0" value="">
+                        - <input type="number" name="num4" placeholder="0" value="">
+                        =<output name="result2" for="num"></output>
+                    </fieldset>
+                </form>
+                <form oninput="result3.value=parseInt(num5.value)/parseInt(num6.value)">
+                    <fieldset>
+                        <legend>나누기</legend>
+                        <input type="number" name="num5" placeholder="0" value="">
+                        / <input type="number" name="num6" placeholder="0" value="">
+                        =<output name="result3" for="num"></output>
+                    </fieldset>
+                </form>
+                <form oninput="result4.value=parseInt(num7.value)*parseInt(num8.value)">
+                    <fieldset>
+                        <legend>곱하기</legend>
+                        <input type="number" name="num7" placeholder="0" value="">
+                        * <input type="number" name="num8" placeholder="0" value="">
+                        =<output name="result4" for="num"></output>
+                    </fieldset>
+                </form>
+            </td>
+
+        </tr>
+
+
+</body>
+
+</html>
