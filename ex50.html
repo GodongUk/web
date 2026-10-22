@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>list style 배우기</title>
+    <style>
+        table {
+            border: 1px solid gray;
+            width: 1000px;
+            height: 1000px;
+        }
+
+        div {
+            border: 1px solid gray;
+            width: 500px;
+            height: 500px;
+        }
+
+        .spbullet {
+            list-style-type: square;
+        }
+
+        .nobullet {
+            list-style-type: none;
+        }
+
+        .book1 {
+            list-style: lower-alpha;
+        }
+
+        .book2 {
+            list-style: upper-roman;
+        }
+
+        .imagee {
+            list-style-image: url('images/dot.jpg');
+        }
+
+        .inside {
+            list-style-position: inside;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>이지퍼블리싱</h1>
+    <table>
+        <tr>
+            <td>
+                <div>
+                    <h3>ul 을 사용</h3>
+                    <ul class="sbbullet">
+                        <li>화사소개</li>
+                        <li>도서</li>
+                        <li>자료실</li>
+                        <li>질문답변</li>
+                        <li>동영상강의</li>
+                    </ul>
+                    <ul class="nobullet">
+                        <li>화사소개</li>
+                        <li>도서</li>
+                        <li>자료실</li>
+                        <li>질문답변</li>
+                        <li>동영상강의</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>ol을 사용</h3>
+                    <ol class="book1">
+                        <li>Do it! 시리즈</li>
+                        <li>된다 시리즈</li>
+                        <li>DCM 프로 사진가</li>
+                        <li>데이터과학 시리즈</li>
+                    </ol>
+                    <ol class="book2">
+                        <li>Do it! 시리즈</li>
+                        <li>된다 시리즈</li>
+                        <li>DCM 프로 사진가</li>
+                        <li>데이터과학 시리즈</li>
+                    </ol>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <h3>이미지 사용</h3>
+                    <ul class="imagee">
+                        <li>화사소개</li>
+                        <li>도서</li>
+                        <li>자료실</li>
+                        <li>질문답변</li>
+                        <li>동영상강의</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>position 사용</h3>
+                    <ul>
+                        <li>화사소개</li>
+                        <li>도서</li>
+                        <li>자료실</li>
+                        <li>질문답변</li>
+                        <li>동영상강의</li>
+                    </ul>
+                    <h4>position inside 사용</h4>
+                    <ul class="inside">
+                        <li>화사소개</li>
+                        <li>도서</li>
+                        <li>자료실</li>
+                        <li>질문답변</li>
+                        <li>동영상강의</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>
