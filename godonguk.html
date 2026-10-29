@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>godonguk </title>
+
+    <link rel="stylesheet" href="css/godonguk.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header1">
+            <nav class="navi">
+                <ul>
+                    <h1>Web Rctreat</h1>
+                    <li><a href="#">리트릿 소개</a></li>
+                    <li><a href="#">학습 일정</a></li>
+                    <li><a href="#">객실 예약</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="section1">
+            <article id="article1">
+                <div id="div1" class="divsize1">
+                    <h2>웹 개발 학습 리트릿</h1>
+                        <h4>Learning Retreat</h4>
+                        <ul class="div1ul1">
+                            <p class="ulpfont"><b>배움과 럭셔리의 완벽한 조화.</b></p>
+                            <li>HTML5 & CSS 기초 마스터</li>
+                            <li>실습 중심 프로젝트 개발</li>
+                            <li>현대적인 웹 표준 (HTML)</li>
+                            <li>문법 및 구조: 기초부터 심화까지</li>
+                        </ul>
+                        <p>현대적이고 구조화된 웹 페이지 구축 방법을 배우세요.
+                            구조(<strong><mark>핵심 개념</mark></strong>) 및 스타일과 같은 요소를 마스터하세요.
+                        </p>
+                        <div class="div1div">
+                            <pre class="pre1">
+<pre>태그를 사용하면
+공백이나
+줄 바꿈이 입력된 그대로 유지됩니다.
+</pre>
+                        </div>
+                </div>
+                <div id="div2" class="divsize1">
+                    <h2>주간 학습 여정</h2>
+                    <p>Journey</p>
+                    <table>
+                        <caption class="caption1">HTML5 학습 일정</caption>
+                        <tr>
+                            <th>주차</th>
+                            <th>주제</th>
+                            <th>실습 내용</th>
+                            <th>진행방식</th>
+                        </tr>
+                        <tr>
+                            <td>WEEK1</td>
+                            <td colspan="2">Foundations - 텍스트 및 목록 구조 마스터</td>
+                            <td>온라인</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">WEEK2</td>
+                            <td rowspan="2">Application(심화적용)</td>
+                            <td>이력서 폼 &멀티미디어</td>
+                            <td>대면</td>
+                        </tr>
+                        <tr>
+                            <td>비디오/오디오 삽입</td>
+                            <td>대면</td>
+                        </tr>
+                    </table>
+                    <p class="div2p">2주 과정 수료 시 인증서 수여</p>
+                </div>
+                <div id="div3" class="divsize2">
+                    <h2>오션 스위트 예약</h2>
+                    <ul>
+                        <li>당신의 완벽한 휴식을 위한 프리미엄 객실을 예약하세요</li>
+                    </ul>
+                    <form>
+                        <fieldset class="fieldset1">
+                            <legend>연락처 정보</legend>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <label>성명 (법적 실명)<br></label>
+                                        <input type="text">
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="formdiv1">
+                                <ul>
+                                    <li>
+                                        <label>전화번호<br></label>
+                                        <input type="tel" placeholder="010-0000-0000">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="formdiv2">
+                                <ul>
+                                    <li>
+                                        <label>이메일 주소<br></label>
+                                        <input type="email" placeholder="example@gmail.com">
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </fieldset>
+                        <fieldset class="fieldset1">
+                            <legend>예약 상세</legend>
+                            <div class="form2div1">
+                                <ul>
+                                    <li>
+                                        <label>도착 날짜<br></label>
+                                        <input type="date">
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="form2div2">
+                                <ul>
+                                    <li>
+                                        <label class="selectlabel">객실 유형<br></label>
+                                        <select>
+                                            <option>오션뷰 스위트</option>
+                                            <option>비치프론트 빌라</option>
+                                            <option>가든 스위트</option>
+                                        </select>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="form2div3">
+                                <ul>
+                                    <li>
+                                        <label">투숙 인원<br></label>
+                                            <input type="number" value="1" min="1" max="5">
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </fieldset>
+                        <fieldset class="fieldset1">
+                            <legend>추가 옵션</legend>
+                            <ul>
+                                <li>식사 서비스:
+                                    <label><input type="radio" name="rice" value="bap">조식 포함</label>
+                                    <label><input type="radio" name="rice" value="bapx">포함 안함</label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" name="service1">리조트 픽업 서비스</label>
+                                    <label><input type="checkbox" name="service2">레이트 체크아웃</label>
+                                </li>
+                                <li>
+                                    <br>
+                                    <legend>특별 요구사항</legend>
+                                    <textarea class="textarea1" name="intro" clos="300" rows="4">
+식단 관련 요구나 기타 요청사항을 적어주세요
+                                    </textarea>
+                                </li>
+                                <li>
+                                    <button class="button1" type="submit" value="submit">예약 확정</button>
+                                    <button class="button1" type="reset" value="reset">처음부터 다시</button>
+                                </li>
+                            </ul>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <footer>
+        </footer>
+    </div>
+</body>
+
+</html>

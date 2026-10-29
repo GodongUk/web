@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 두 개의 숫자를 입력받아 사칙연산 계산하여 출력해주는 자바스크립트 프로그램 작성 -->
+
+<head>
+    <meta charset="UTF-8">
+    <title> 사칙연산 </title>
+    <script>
+        var num1 = 0;
+        var num2 = 0;
+        var sum = 0;
+
+
+        num1 = Number(prompt("첫 번째 숫자를 입력하세요", "0"));
+        num2 = Number(prompt("두 번째 숫자를 입력하세요", "0"));
+
+        document.write("첫번째 숫자" + num1 + "<br>");
+
+        document.write("두번째 숫자" + num2 + "<br>");
+        sum = num1 + num2;
+        document.write("더한 값:" + sum + "<br>");
+        sum = num1 - num2;
+        document.write("뺀 값:" + sum + "<br>");
+        sum = num1 * num2;
+        document.write("곱한 값:" + sum + "<br>");
+        sum = num1 / num2;
+        document.write("나눈 값:" + sum + "<br>");
+        sum = num1 % num2;
+        document.write("나머지 값:" + sum + "<br>");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
