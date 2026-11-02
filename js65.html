@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>셀렉터 연습2</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        function fn_process() {
+            var value = $("#t_input").val();
+            $("#t_output").val(value);
+        }
+    </script>
+
+</head>
+
+<body>
+    <input type="text" id="t_input" />
+    <input type="button" value="입력하기" onclick="fn_process()" /><br><br>
+    <div>
+        결과: <br>
+        <input type="text" id="t_output" dasabled />
+    </div>
+
+</body>
+
+</html>

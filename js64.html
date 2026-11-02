@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>셀렉터 연습2</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        function addImage() {
+            $("div").html("<img src='images/dogbg.jpg'>");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div></div>
+    <div></div>
+    <input type="button" value="이미지 추가하기" onclick="addImage()" />
+    
+</body>
+
+</html>

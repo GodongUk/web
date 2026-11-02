@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>셀렉터 연습2</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        function addHtml() {
+            $("#article").html('안녕하세요' + '<br>');
+        }
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <p id="article"></p>
+
+    </div>
+    <input type="button" value="추가하기" onclick="addHtml()" />
+</body>
+
+</html>
